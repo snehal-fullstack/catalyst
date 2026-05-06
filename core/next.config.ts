@@ -62,6 +62,7 @@ export default async (): Promise<NextConfig> => {
 
   let nextConfig: NextConfig = {
     reactStrictMode: true,
+    transpilePackages: ['@bigcommerce/catalyst-shared'],
     experimental: {
       optimizePackageImports: ['@icons-pack/react-simple-icons'],
       ppr: 'incremental',
